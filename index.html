@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz@1,12..72&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&family=Texturina:ital,opsz@1,12..72&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Pacifico&family=Young+Serif&display=swap" rel="stylesheet">
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Lora:ital@1&family=Pacifico&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+  
+   html,body{
+   
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  height: auto !important;}
+   
+    .grid-container>*{
+  width: 100%;
+     
+  }
+  .grid-container{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-areas: "header header header"
+                          "konten konten konten"
+                          "nav nav nav"
+                          "footer footer footer";
+                          grid-template-columns: auto 175px auto;
+                          grid-template-rows: auto auto auto;
+                          place-content: center;
+                          gap: 15px;
+                          align-content: space-around;
+                          
+  }
+  header {grid-area: header;
+          min-height: 25vh;}
+  aside {grid-area: nav;
+          min-height: 100vh;}
+  article{grid-area: konten;
+          min-height: 50vh;}
+  aside{grid-area: aside;
+          min-height: 20vh;}
+
+  footer{grid-area: footer;
+  min-height: 60vh;}
+
+  header{
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    font-family: 'Love Light', cursive;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+
+color: rgb(0, 0, 0);
+grid-gap: 0.15px;
+  }
+  
+  header>h2{
+   font-family: 'Pacifico', cursive;
+font-family: 'Young Serif', serif;
+    color: rgb(10, 10, 10);
+    display: grid;
+    justify-content: center;
+  }
+  article{
+    display: grid;
+   place-content: center;
+    grid-auto-rows: 100px;
+    grid-gap: 0.5px;
+    align-items: center;
+  }
+  article>img{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    object-fit: cover;
+    align-content: center;
+    place-content: center;
+    text-shadow: 1px 2px 2px #FF8F82;
+  }
+ 
+  footer{
+    display: grid;
+    box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+ align-content: flex-end;
+
+ }
+ .footerq{
+  display: grid;
+  box-sizing: border-box;
+  align-content: space-evenly;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  align-content: space-around;
+
+ }
+
+
+
+  header>h1{
+    display: grid;
+    justify-content: center;
+  
+  }
+  .box{
+    position: relative;
+    align-content: space-evenly;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    width: auto;
+    min-height: 150px;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    box-shadow: #8ec5fc;
+    box-shadow: 1px 1px 1px 1px lightblue;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .text>p{
+    font-size: 15px;
+    text-align: center;
+  }
+  .from{
+    font-size: 20px;
+    text-align: center;
+  }
+  .audio{
+   display: grid;
+   width: auto;
+   min-height: 55px; ;
+   align-content: center;
+   justify-content: center;
+   
+  }
+
+  [class*="col-"] {
+  width: 100%;
+}
+@media only screen and (max-width :600px),(max-height: 500px){
+  body{
+    display: grid;
+    box-sizing: border-box;
+    align-content: space-around;
+   place-content: center;
+  }
+  header{
+    min-height: 75px;
+  }
+
+ 
+}
+
+ article{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 350px;
+  align-content: space-around;
+  column-gap: 0px;
+  z-index: 1;
+ 
+ }
+ footer{
+width: 100%;
+min-height: 300px;
+display: grid;
+place-content: start;
+align-content: space-around;
+align-items: center;
+letter-spacing: 4.8px;
+word-spacing: 6px;
+ }
+nav{
+
+  display: grid;
+  width:100%; 
+  grid-column: 1 / 4;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+ nav>h1{
+  font-family: 'Lora', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Young Serif', serif;
+font-size: 2rem;
+ }
+ nav>h2{
+  font-family: 'Ephesis', cursive;
+font-family: 'Lora', serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Young Serif', serif;
+font-size: 1rem;
+justify-content: center;
+ }
+  </style>
+</head>
+
+
+
+
+
+
+
+<body>
+  <div class="grid-container">
+   <header class="header">
+    <h1 class="text-4xl shadow-sm m-1 tracking-wide italic font-extralight ml-5">Dear....</h1>
+    <h2 class="text-2xl shadow-sm tracking-widest italic">DEVIANTI SAFIRA S.AK</h2>
+
+   </header>
+
+   <article>
+    <img src="Devianti Safira.jpg.JPG" class="block aspect-auto rounded-xl transition-all hover:scale-110 w-56 max-h-fit items-stretch ring">
+  </article>
+  <nav>
+    <h1 class="text-center text-pink-300 tracking-wide">HAPPY GRADUATION!</h1>
+    <h2 class="text-center tracking-tighter p-1">Congratulation on your graduation and best wishes for your next adventure.</h2>
+  </nav>
+   
+   <footer>
+    <div class="box">
+    <div class="footerq">
+    <img src="ibeng3.JPG" class="rounded-3xl w-10 h-10 grid object-cover scale-125  place-content-center "> </div>
+    <div class="text">
+      <blockquote class="text-center text-sm tracking-wider font-serif">"It takes courage to grow up and become who you really are." —E. E. Cummings</blockquote>
+    </div>
+    <div class="audio">
+      <audio controls autoplay>
+        <source src="Komang - Raim Laode ( Official Lirik ).mp3" type="audio/ogg">
+        <source src="Komang - Raim Laode ( Official Lirik ).mp3" type="audio/mpeg">
+    </div>
+  </div>
+</div>
+  </footer> 
+  
+</div>
+</body>
